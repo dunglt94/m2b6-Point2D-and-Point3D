@@ -24,15 +24,12 @@ public class Point3D extends Point2D {
     }
 
     public Float[] getXYZ() {
-        Float[] xyz = new Float[3];
-        xyz[0] = super.getX();
-        xyz[1] = super.getY();
-        xyz[2] = this.z;
+        Float[] xyz = {super.getX(), super.getY(), this.z};
         return xyz;
     }
 
     @Override
     public String toString() {
-        return "Point3D{" + super.getX() + ", " + super.getY() + ", " + this.z + "}";
+        return "(" + super.getX() + ", " + super.getY() + ", " + this.z + ")";
     }
 }

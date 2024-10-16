@@ -33,14 +33,12 @@ public class Point2D {
     }
 
     public Float[] getXY() {
-        Float[] xy = new Float[2];
-        xy[0] = this.x;
-        xy[1] = this.y;
+        Float[] xy = {this.x, this.y};
         return xy;
     }
 
     @Override
     public String toString() {
-        return "Point2D{" + this.x + ", " + this.y + "}";
+        return "(" + this.x + ", " + this.y + ")";
     }
 }
